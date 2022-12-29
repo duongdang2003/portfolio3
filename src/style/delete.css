@@ -1,0 +1,15 @@
+.delete {
+	background-color: red;
+	color: white;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	text-align: center;
+	top: -25px;
+	cursor: pointer;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+}
