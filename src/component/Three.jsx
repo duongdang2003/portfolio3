@@ -4,11 +4,11 @@ import { Routes, Link, Route, useNavigate } from "react-router-dom";
 import ModernPortfolio from "./ModernPortfolio";
 
 export default function Three() {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
-	const handleClick = () => {
-		navigate("/modernPortfolio");
-	};
+	// const handleClick = () => {
+	// 	navigate("/modernPortfolio");
+	// };
 	console.log(localStorage.getItem("loadThree"));
 	if (
 		localStorage.getItem("loadThree") < 1 &&
@@ -26,8 +26,8 @@ export default function Three() {
 					<ThreeScene />
 				</canvas>
 			</div>
-			<button onClick={handleClick} id="chuyentrang">
-				Create Your Portfolio
+			<button id="chuyentrang">
+				<a href="./ModernPortfolio">Create Your Portfolio</a>
 			</button>
 		</>
 	);
